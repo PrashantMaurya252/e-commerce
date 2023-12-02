@@ -4,7 +4,7 @@ function Product({department,product,cost,onClickAddButton}) {
   return (
     <div>
         <div>{department.toUpperCase()}</div>
-        <div>{department}</div>
+        <div>{product}</div>
         <div>{cost}</div>
         <button onClick={onClickAddButton}>Add To Cart</button>
     </div>

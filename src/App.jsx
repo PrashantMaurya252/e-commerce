@@ -13,10 +13,10 @@ function App() {
             <h1>ShopCart</h1>
             <div>
                 <Link to='/'>
-                   <NavButton/>
+                   <NavButton label="CATALOG"/>
                 </Link>
                 <Link to='/cart'>
-                   <CartButton/>
+                   <CartButton items={0}/>
                 </Link>
             </div>
         </div>
