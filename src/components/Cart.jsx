@@ -6,10 +6,10 @@ function Cart() {
   return (
     <div>
         <h1>Cart</h1>
-        <div>
+        {/* <div>
             <CartItem product={} cost={} quantity={}/>
         </div>
-        <CartTotals totalProducts={} totalCost={}/>
+        <CartTotals totalProducts={} totalCost={}/> */}
     </div>
   )
 }

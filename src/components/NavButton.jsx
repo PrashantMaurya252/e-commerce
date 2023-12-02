@@ -2,7 +2,7 @@ import React from 'react'
 
 function NavButton({label,onClick}) {
   return (
-    <button onClick={onClick}>{label.toUpperCase()}</button>
+    <button onClick={onClick}>{label}</button>
   )
 }
 
