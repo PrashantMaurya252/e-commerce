@@ -1,12 +1,18 @@
-import React from 'react'
-import { useSelector } from 'react-redux';
+import React,{useEffect} from 'react'
+import { useSelector,useDispatch } from 'react-redux';
 import { Link,BrowserRouter,Routes,Route } from 'react-router-dom';
 import NavButton from './components/NavButton';
 import CartButton from './components/CartButton';
 import Catalog from './components/Catalog'
 import Cart from './components/Cart';
 
+import { initCatalog } from './store/actions/catalogActions';
+
 function App() {
+  const dispatch=useDispatch();
+  useEffect(()=>{
+    dispatch(initCatalog())
+  },[])
   const totalProducts=useSelector(state=>state.cart.totalProducts)
   return (
     <BrowserRouter>
