@@ -1,4 +1,5 @@
 import React from 'react'
+import { useSelector } from 'react-redux';
 import { Link,BrowserRouter,Routes,Route } from 'react-router-dom';
 import NavButton from './components/NavButton';
 import CartButton from './components/CartButton';
@@ -6,6 +7,7 @@ import Catalog from './components/Catalog'
 import Cart from './components/Cart';
 
 function App() {
+  const totalProducts=useSelector(state=>state.cart.totalProducts)
   return (
     <BrowserRouter>
        <div>
@@ -16,7 +18,7 @@ function App() {
                    <NavButton label="CATALOG"/>
                 </Link>
                 <Link to='/cart'>
-                   <CartButton items={0}/>
+                   <CartButton items={totalProducts}/>
                 </Link>
             </div>
         </div>

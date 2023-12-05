@@ -2,8 +2,9 @@ import React from 'react'
 import Product from './Product'
 import {connect} from 'react-redux'
 import { setFilter,clearFilter } from '../store/actions/catalogActions'
+import { addToCart } from '../store/actions/cartActions'
 
-function Catalog({catalog,department,onSetFilter,onClearFilter}) {
+function Catalog({catalog,department,onSetFilter,onClearFilter,onAddToCart}) {
   return (
     <div>
         <h1>Catalog</h1>
@@ -12,7 +13,7 @@ function Catalog({catalog,department,onSetFilter,onClearFilter}) {
         ))}
         <button onClick={()=>onClearFilter()}>Clear Button</button>
         <div>
-            {catalog && catalog.map(item =><Product key={item.id} {...item}/>)}
+            {catalog && catalog.map(item =><Product key={item.id} {...item} onClickAddButton={()=>onAddToCart(item)}/>)}
         </div>
     </div>
   )
@@ -31,7 +32,8 @@ const mapStateToProps=state=>{
 const mapDispatchToProps=dispatch=>{
   return {
     onSetFilter:department=>dispatch(setFilter(department)),
-    onClearFilter:()=>dispatch(clearFilter())
+    onClearFilter:()=>dispatch(clearFilter()),
+    onAddToCart:product=>dispatch(addToCart(product))
   }
 }
 
