@@ -1,67 +1,83 @@
 const departments = [
     {
       id: "dep01",
-      title: "Outdoors"
+      title: "Outdoors",
+      img:"https://images.unsplash.com/photo-1476041026529-411f6ae1de3e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8b3V0ZG9vcnN8ZW58MHx8MHx8fDA%3D"
     },
     {
       id: "dep02",
-      title: "Books"
+      title: "Books",
+      img:"https://images.unsplash.com/photo-1533669955142-6a73332af4db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGJvb2t8ZW58MHx8MHx8fDA%3D"
     },
     {
       id: "dep03",
-      title: "Electronics"
+      title: "Electronics",
+      img:"https://images.unsplash.com/photo-1518770660439-4636190af475?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D"
     },
     {
       id: "dep04",
-      title: "Baby"
+      title: "Baby",
+      img:"https://images.unsplash.com/photo-1519689680058-324335c77eba?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGJhYnklMjBwcm91Y3RzfGVufDB8fDB8fHww"
     },
     {
       id: "dep05",
-      title: "Sports"
+      title: "Sports",
+      img:"https://images.unsplash.com/photo-1579952363873-27f3bade9f55?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BvcnRzfGVufDB8fDB8fHww"
     },
     {
       id: "dep06",
-      title: "Health"
+      title: "Health",
+      img:"https://images.unsplash.com/photo-1505576399279-565b52d4ac71?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8aGVhbHRofGVufDB8fDB8fHww"
     },
     {
       id: "dep07",
-      title: "Kids"
+      title: "Kids",
+      img:"https://images.unsplash.com/photo-1596461404969-9ae70f2830c1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8a2lkcyUyMHRveXN8ZW58MHx8MHx8fDA%3D"
     },
     {
       id: "dep08",
-      title: "Computers"
+      title: "Computers",
+      img:"https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8Y29tcHV0ZXJzfGVufDB8fDB8fHww"
     },
     {
       id: "dep09",
-      title: "Industrial"
+      title: "Industrial",
+      img:"https://images.unsplash.com/photo-1701453031587-aba9b3d34a98?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjN8fGluZHVzdHJpYWwlMjBwcm9kdWN0c3xlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       id: "dep10",
-      title: "Movies"
+      title: "Movies",
+      img:"https://images.unsplash.com/photo-1616530940355-351fabd9524b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW92aWVzfGVufDB8fDB8fHww"
     },
     {
       id: "dep11",
-      title: "Games"
+      title: "Games",
+      img:"https://images.unsplash.com/photo-1606167668584-78701c57f13d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8Z2FtZXN8ZW58MHx8MHx8fDA%3D"
     },
     {
       id: "dep12",
-      title: "Shoes"
+      title: "Shoes",
+      img:"https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8c2hvZXN8ZW58MHx8MHx8fDA%3D"
     },
     {
       id: "dep13",
-      title: "Clothing"
+      title: "Clothing",
+      img:"https://images.unsplash.com/photo-1523381210434-271e8be1f52b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8Y2xvdGhpbmd8ZW58MHx8MHx8fDA%3D"
     },
     {
       id: "dep14",
-      title: "Beauty"
+      title: "Beauty",
+      img:"https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8YmVhdXR5fGVufDB8fDB8fHww"
     },
     {
       id: "dep15",
-      title: "Tools"
+      title: "Tools",
+      img:"https://images.unsplash.com/photo-1426927308491-6380b6a9936f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8dG9vbHN8ZW58MHx8MHx8fDA%3D"
     },
     {
       id: "dep16",
-      title: "Home"
+      title: "Home",
+      img:"https://images.unsplash.com/photo-1514237487632-b60bc844a47d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aG9tZSUyMHByb2R1Y3RzfGVufDB8fDB8fHww"
     }
   ];
   

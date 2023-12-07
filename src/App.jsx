@@ -17,11 +17,11 @@ function App() {
   return (
     <BrowserRouter>
        <div>
-        <div>
-            <h1>ShopCart</h1>
-            <div>
+        <div >
+            <h1 className='text-blue-900 text-5xl font-semibold text-center'>ShopCart</h1>
+            <div className='flex items-center justify-end mr-6 gap-4 bg-gradient-to-r from-green-400 to-blue-300 h-24 m-2 p-4'>
                 <Link to='/'>
-                   <NavButton label="CATALOG"/>
+                   <NavButton label="HOME"/>
                 </Link>
                 <Link to='/cart'>
                    <CartButton items={totalProducts}/>
