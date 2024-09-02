@@ -7,7 +7,7 @@ function Product({department,product,cost,onClickAddButton}) {
         <div className='md:text-xl font-semibold'>{department.toUpperCase()}</div>
         <div className='md:text-lg font-medium'>{product}</div>
         <div className='md:text-lg font-medium text-red-800'>{cost}₹</div>
-        <button className='active:text-red-950  text-gray-200 md:text-xl font md:font-semibold bg-gradient-to-r from-green-400 to-blue-400 p-2 border-2 border-black rounded-xl ' onClick={onClickAddButton}>Add To Cart</button>
+        <button className='active:text-red-950  text-gray-200 md:text-xl font md:font-semibold bg-gradient-to-r from-green-400 to-blue-400 p-2 border-2 border-black rounded-full ' onClick={onClickAddButton}>Add To Cart</button>
     </div>
   )
 }
