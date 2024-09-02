@@ -1,1 +1,1 @@
-google.com, pub-1234, DIRECT, 1234
+google.com, pub-7268482975636043, DIRECT, 7268482975636043
